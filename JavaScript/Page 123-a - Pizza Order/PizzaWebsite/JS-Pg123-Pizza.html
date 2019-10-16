@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paragon Pizza Parlor!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width,initial-scale=1.0" name="viewport">
+
+        <style>
+        #pizzaMenu{width:470px;height:auto;margin: auto;}
+        .allMenu
+        {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            padding: 10px;
+            grid-gap: 10px;
+            justify-content: space-evenly;
+        }
+
+        .allMenu > div 
+        {
+            background-color: rgb(255, 255, 255);
+            text-align: left;
+            padding: 0px 5px;
+            
+        }
+
+        #totalPrice{width:200px;height:190px;margin:0 auto;float:right;}
+        #showText1{width:200px;height:190px;margin:0px auto;float:left;}
+        #showText2{width:200px;height:190px;margin:0px auto;float:left;}
+        #cart{top:0;margin:0px auto;width:400px;height:200px;}
+        #btnOrder{margin:10px 5px 5px 100px;width:100px;height:40px}
+        .pageName{width:470px;height:auto;margin: auto;border: 3px solid red;padding: 5px;background:rgba(0, 0, 0, 0.60)}
+        
+        .menu{border: 3px solid red;padding: 5px;width:180px;height:220px;}
+        
+        div.orderBtns{position:fixed;bottom:0;right:0;width:300px;border:3px solid red;background:rgba(0, 0, 0, 0.60)}
+        
+        
+        
+        </style>
+    </head>
+
+    <body>
+        <h1 class="pageName">Paragon Pizza Parlor!</h1>
+        <div id="pizzaMenu">
+            
+
+            <form class="allMenu" id="frmMenu">
+                <div class="menu">
+                    <h3>Pizza Size:</h3>
+                    <input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Large Pizza" checked> Large Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+                </div>
+                <div class="menu">
+                    <h3>Meats:</h3>
+                    <input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni<br>
+                    <input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage<br>
+                    <input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br>
+                    <input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef<br>
+                    <input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy<br>
+                    <input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken<br>
+                </div>
+                <div class="menu">
+                    <h3>Veggies:</h3>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Tomatoes"> Tomatoes<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Onions"> Onions<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Olives"> Olives<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Green Peppers"> Green Peppers<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Mushrooms"> Mushrooms<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Pineapple"> Pineapple<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Spinach"> Spinach<br>
+                    <input class="veggie" type="checkbox" name="Veggie" value="Jalapeno"> Jalapeno<br>
+                </div>                
+                <div class="menu">
+                    <h3>Cheese:</h3>
+                    <input class="cheese" type="radio" name="cheese" value="Regular Cheese" checked> Regular<br>
+                    <input class="cheese" type="radio" name="cheese" value="No Cheese"> No Cheese<br>
+                    <input class="cheese" type="radio" name="cheese" value="Extra Cheese" > Extra Cheese<br>
+                </div>
+                <div class="menu">
+                    <h3>Sauce:</h3>
+                    <input class="sauce" type="radio" name="sauce" value="Marinara Sauce" checked> Marinara Sauce<br>
+                    <input class="sauce" type="radio" name="sauce" value="White Sauce"> White Sauce<br>
+                    <input class="sauce" type="radio" name="sauce" value="Barbaque Sauce" > Barbaque Sauce<br>
+                    <input class="sauce" type="radio" name="sauce" value="No Sauce" > No Sauce<br>
+                </div>
+                <div class="menu">
+                    <h3>Crust:</h3>
+                    <input class="crust" type="radio" name="crust" value="Plain Crust" checked> Plain Crust<br>
+                    <input class="crust" type="radio" name="crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
+                    <input class="crust" type="radio" name="crust" value="Cheese Stuffed Crust" > Cheese Stuffed Crust<br>
+                    <input class="crust" type="radio" name="crust" value="Spicy Crust" > Spicy Crust<br>
+                    <input class="crust" type="radio" name="crust" value="House Special Crust" > House Special Crust<br>
+                </div>
+
+            </form>
+
+            <div class="cart">
+                <div>
+                    <p id="showText1"></p>
+                    <p id="showText2"></p>
+                </div>
+                <div>
+                    <p id="totalPrice"></p>
+                </div>
+            </div>
+            
+            <div class="orderBtns">
+            <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+            <input id="btnOrder" type="button" onclick="resetOrder()" value="Reset Order">
+            </div>
+
+        </div>
+        <script src="pizzaOrder.js"></script>
+    </body>
+</html>
