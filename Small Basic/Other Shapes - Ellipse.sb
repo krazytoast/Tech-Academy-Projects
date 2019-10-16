@@ -1,0 +1,6 @@
+GraphicsWindow.Width = 300
+GraphicsWindow.Height = 300
+GraphicsWindow.BackgroundColor = "Black
+GraphicsWindow.PenColor = "Yellow
+GraphicsWindow.PenWidth = 20
+GraphicsWindow.DrawEllipse(50, 50, 200, 200)

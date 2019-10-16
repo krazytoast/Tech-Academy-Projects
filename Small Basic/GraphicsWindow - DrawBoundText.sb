@@ -1,0 +1,10 @@
+'The first number gives the X Coordinate, the second number the Y Coordinate, 
+' and the third number is the Width setting the parameter for when the text should wrap.
+GraphicsWindow.DrawBoundText(70, 70, 150, "John")
+GraphicsWindow.DrawBoundText(120, 70, 150, "Sally")
+GraphicsWindow.DrawBoundText(180, 70, 150, "Bill")
+GraphicsWindow.DrawBoundText(250, 70, 150, "Jessica")
+GraphicsWindow.DrawBoundText(70, 120, 150, "John")
+GraphicsWindow.DrawBoundText(120, 120, 150, "Sally")
+GraphicsWindow.DrawBoundText(180, 120, 150, "Bill")
+GraphicsWindow.DrawBoundText(250, 120, 150, "Jessica")

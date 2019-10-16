@@ -1,0 +1,42 @@
+'Set Window background color and size
+GraphicsWindow.BackgroundColor = "DarkBlue
+GraphicsWindow.Height = 600
+GraphicsWindow.Width = 605
+
+'Declaring variables for columns, rows amd sides
+Rows = 10
+Columns = 10
+Sides = 50
+
+'For loop creates squares from variables of roow and columns then randomly colors them and finally moves them
+For A = 1 To Columns
+  For B = 1 To Rows
+    GraphicsWindow.BrushColor = GraphicsWindow.GetRandomColor()
+    Squares[A][B] = Shapes.AddRectangle(Sides, Sides)
+    Shapes.Move(Squares[A][B], A * Sides, B * Sides)
+  EndFor
+EndFor
+
+'For loop animates movement of the squares
+For A = 1 To Columns
+  For B = 1 To Rows
+    Shapes.Animate(Squares[B][A], 300, 0, 1000)
+    Program.Delay(50)
+  EndFor
+EndFor
+
+'For loop animates movement of the squares
+For A = 1 To Columns
+  For B = 1 To Rows
+    Shapes.Animate(Squares[B][A], 288, 500, 1000)
+    Program.Delay(10)
+  EndFor
+EndFor
+
+'For loop animates movement of the squares
+For A = 1 To Columns
+  For B = 1 To Rows
+    Shapes.Animate(Squares[B][A], 275, 250, 1000)
+    Program.Delay(10)
+  EndFor
+EndFor 

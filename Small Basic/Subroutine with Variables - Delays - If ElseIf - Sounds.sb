@@ -1,0 +1,21 @@
+TextWindow.BackgroundColor = "DarkBlue
+TextWindow.Write("Guess which box has the prize to win. You get 2 guesses. Box 1, 2 ,3, or 4: ")
+
+Prize()
+ Sub Prize
+   UserInput = TextWindow.Read()
+   Winning_Box = Math.GetRandomNumber(4)
+    If (UserInput = Winning_Box) Then
+      Sound.PlayBellRing()
+      TextWindow.WriteLine("Congrats! You Win a bell sound!")
+      Program.Delay(2000)
+      TextWindow.Write("Thank you for playing!")
+      Program.Delay(1000)
+      Program.End()
+     ElseIf (UserInput > 4) then
+      TextWindow.Write("Sorry only 1-4 is allowed: ")
+     Else
+      TextWindow.Write("Please try again: ")
+    EndIf
+ EndSub
+ Prize()

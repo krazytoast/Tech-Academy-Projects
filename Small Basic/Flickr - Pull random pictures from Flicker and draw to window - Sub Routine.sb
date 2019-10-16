@@ -1,0 +1,8 @@
+GraphicsWindow.Title = "It's raining cats and dogs!"
+GraphicsWindow.Width= 700
+GraphicsWindow.Height = 700
+GraphicsWindow.MouseDown = Pics
+Sub Pics
+  Picture = Flickr.GetRandomPicture("Cats, Dogs")
+  GraphicsWindow.DrawResizedImage(Picture, 0, 0, 700, 700)
+EndSub

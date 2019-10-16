@@ -1,0 +1,5 @@
+GraphicsWindow.Width = 300
+GraphicsWindow.Height = 300
+GraphicsWindow.BackgroundColor = "Black
+GraphicsWindow.BrushColor = "Yellow
+GraphicsWindow.FillEllipse (50, 50, 200, 200)

@@ -1,0 +1,5 @@
+GraphicsWindow.Height = 500
+GraphicsWindow.Width = 700
+GraphicsWindow.BackgroundColor = "Silver
+GraphicsWindow.Title = "The Coolest Graphics Ever!!
+GraphicsWindow.Show()

@@ -1,0 +1,13 @@
+GraphicsWindow.BackgroundColor = "Black"
+GraphicsWindow.Height = 600
+GraphicsWindow.Width = 605
+Rows = 10
+Columns = 10
+Sides = 50
+For A = 1 To Columns
+  For B = 1 To Rows
+    GraphicsWindow.BrushColor = "Blue"
+    Squares[A][B] = Shapes.AddRectangle(Sides, Sides)
+    Shapes.Move(Squares[A][B], A * Sides, B * Sides)
+  EndFor
+EndFor

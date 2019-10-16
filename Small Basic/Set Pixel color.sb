@@ -1,0 +1,1 @@
+GraphicsWindow.SetPixel(20, 20, "Black")

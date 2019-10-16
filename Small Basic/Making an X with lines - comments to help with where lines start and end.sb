@@ -1,0 +1,5 @@
+'Diagnal line from left 10 and bottom 200 to right 200 and top 10
+GraphicsWindow.DrawLine(10,200,200,10)
+
+'Diagnal line from left 10 and top 10 to right 200 bottom 10
+GraphicsWindow.DrawLine(10,10,200,200)

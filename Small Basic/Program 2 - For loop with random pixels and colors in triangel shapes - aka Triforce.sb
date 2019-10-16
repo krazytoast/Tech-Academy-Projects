@@ -1,0 +1,31 @@
+'Set window Width, Height and Color
+GraphicsWindow.Width = 1000
+GraphicsWindow.Height = 650
+GraphicsWindow.BackgroundColor = "Black
+
+'Declaring Variables
+A = 1000
+B = 1000
+
+'For Loop that uses Random Number Gen to color pixels
+For C = 1 To 10000
+  D = Math.GetRandomNumber(3)
+  E = 500
+  Program.Delay(.1)
+  F = 30
+  If (D = 1) Then
+    E = 30
+    Program.Delay(.1)
+    F = 1000
+  EndIf
+  If (D = 2) Then
+  E = 1000
+  F = 1000
+  Program.Delay(.1)
+  EndIf
+  A = (A + E) / 2
+  Program.Delay(.1)
+  B = (B + F) / 2
+  Random_Color = GraphicsWindow.GetRandomColor()
+  GraphicsWindow.SetPixel(A, B, Random_Color)
+  EndFor

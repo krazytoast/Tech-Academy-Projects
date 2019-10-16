@@ -1,0 +1,20 @@
+TextWindow.BackgroundColor = "DarkRed
+TextWindow.Write("This is a program that allows you to choose from various sounds you'd wish to hear. You'll get to choose three times! ")
+Sound()
+ Sub Sound
+   Start:
+   TextWindow.Write("To hear a bell ring, type Bell. To hear a chime, type Chime. To hear a click, type Click: ")
+   Sound_Choice = TextWindow.Read()
+   If Sound_Choice = "Bell" Then
+     Sound.PlayBellRing()
+   ElseIf Sound_Choice = "Chime" Then
+     Sound.PlayChime()
+   ElseIf Sound_Choice = "Click" Then
+     Sound.PlayClick()
+   Else
+     TextWindow.Write("Please type Chime, Bell or Click.")
+     Goto Start
+   EndIf
+ EndSub
+Sound()
+Sound()

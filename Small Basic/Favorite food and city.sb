@@ -1,0 +1,13 @@
+'this code asks the user thier favorite food and awaits user input
+TextWindow.Write("What is your favorite food?: ")
+food = TextWindow.Read()
+
+'This code replies to the user with their favorite food in all caps to show excitement
+TextWindow.WriteLine("Your favorite food is " + Text.ConvertToUpperCase(food) + "! Yummy!")
+
+'This code asks the next question regarding the city they would like to visit and then awaits user input
+TextWindow.Write("Which city would you most like to visit?: ")
+city = TextWindow.Read()
+
+'This code writes to user with the city they want to visit and tells them not to forget their computer and favorite food
+TextWindow.WriteLine(city + " sounds like a great place to visit! Don't forget to bring your computer and " + food + " with you!")

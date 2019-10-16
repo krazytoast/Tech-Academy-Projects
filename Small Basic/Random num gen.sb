@@ -1,0 +1,16 @@
+'This asks the user to pick a number between 1-10 and awaits user input
+TextWindow.WriteLine("Pick a number between 1-10")
+userNumber = TextWindow.ReadNumber( )
+
+'This generates a random number between 1-10 and assigns it to a variable
+guess = Math.GetRandomNumber(10)
+
+'Uncomment the below code for troubleshooting the random number generator
+'TextWindow.WriteLine(guess)
+
+'This compares the user input to the random generated number and supplies a message to the user if they were correct or incorrect
+If (userNumber = guess) Then
+  TextWindow.WriteLine("You guessed right!")
+Else
+  TextWindow.WriteLine("Sorry close the program and try again :(")
+EndIf

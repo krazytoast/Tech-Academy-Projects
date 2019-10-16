@@ -1,0 +1,3 @@
+For B = 29 To 1 Step -2
+  TextWindow.WriteLine(B)
+  EndFor

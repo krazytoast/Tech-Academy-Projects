@@ -1,0 +1,3 @@
+A = 20
+B = 50
+GraphicsWindow.FillEllipse(A, B, 350, 350)

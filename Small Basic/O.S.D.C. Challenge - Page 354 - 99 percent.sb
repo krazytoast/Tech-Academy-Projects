@@ -1,0 +1,53 @@
+'Set Title
+GraphicsWindow.Title = "O.S.D.C. Challenge - Page 354 - 99%"
+
+'Set window size
+GraphicsWindow.Width = 700
+GraphicsWindow.Height = 700
+
+'KeyDown and KeyUp
+GraphicsWindow.DrawText(GraphicsWindow.Width /3, GraphicsWindow.Height /3, "Press and hold the ANY key, release when you are ready to start")
+GraphicsWindow.KeyDown = keyDown
+GraphicsWindow.KeyUp = keyUp
+
+'Sub for KeyDown
+Sub keyDown
+  GraphicsWindow.DrawText(GraphicsWindow.Width/2.2, GraphicsWindow.Height/2.2, "Keydown... ")
+EndSub
+
+'Sub for KeyUp
+Sub keyUp
+  GraphicsWindow.DrawText(GraphicsWindow.Width/2, GraphicsWindow.Height/2, "... and KeyUp!")
+EndSub
+
+'MouseUp and MouseDown
+GraphicsWindow.DrawText(GraphicsWindow.Width /3.5, GraphicsWindow.Height /3.5, "Press the mouse to clear text, release mouse to see instructions.")
+GraphicsWindow.MouseDown = mouseDown
+GraphicsWindow.MouseUp = mouseUp
+
+'Sub for MouseDown
+Sub mouseDown
+  GraphicsWindow.Clear()
+EndSub
+
+'Sub for MouseUp - Background set to white and drawtext
+Sub mouseUp
+  GraphicsWindow.BackgroundColor = "White
+  GraphicsWindow.DrawText(GraphicsWindow.Width /4.2, GraphicsWindow.Height /4.2, "Pressing and releasing ANY key will each display a message")
+  GraphicsWindow.DrawText(GraphicsWindow.Width /4.6, GraphicsWindow.Height /4.6, "Pressing mouse down will clear text, releasing mouse will display instructions")
+EndSub
+
+'MouseMove - Detect mouse down and move - set pen width - when down and move drawline white and set background to black
+GraphicsWindow.MouseMove = A
+GraphicsWindow.PenWidth = (50)
+Sub A
+  E = GraphicsWindow.MouseX
+  F = GraphicsWindow.MouseY
+  If (Mouse.IsLeftButtonDown) Then
+    GraphicsWindow.BackgroundColor = "Black
+    GraphicsWindow.PenColor = "White"
+    GraphicsWindow.DrawLine(C, D, E, F)
+  EndIf
+  C = E
+  D = F
+EndSub

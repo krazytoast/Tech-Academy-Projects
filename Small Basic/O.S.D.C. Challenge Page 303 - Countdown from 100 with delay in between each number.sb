@@ -1,0 +1,8 @@
+Number = 100
+Start:
+TextWindow.WriteLine(Number)
+Number = Number - 1
+Program.Delay(100)
+If (Number > 0) Then
+  Goto Start
+  EndIf

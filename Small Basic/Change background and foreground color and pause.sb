@@ -1,0 +1,27 @@
+'This code is changing the background and foreground colors
+TextWindow.BackgroundColor="White
+TextWindow.ForegroundColor="Blue
+
+'This code is pausing the code and awaiting user input before continuing
+TextWindow.Pause()
+
+'This code will clear the operation
+TextWindow.Clear()
+
+'This code is printing Text output to the user
+TextWindow.WriteLine("Hello World!!!")
+
+'This code is pausing the code and awaiting user input before continuing
+TextWindow.Pause()
+
+'This code will clear the operation
+TextWindow.Clear()
+
+'This code is changing the background and foreground colors again
+TextWindow.BackgroundColor="Yellow
+TextWindow.ForegroundColor="Black
+
+'This code is printing output to the user
+TextWindow.WriteLine("Congratulations! you pressed 'Any' key")
+
+'The program will close after the user presses any key an additional time

@@ -1,0 +1,26 @@
+First_Number = 5
+Second_Number = 10
+Third_Number = 15
+Fourth_Number = 20
+Fifth_Number = 50
+Sixth_Number = 16
+
+TextWindow.WriteLine(Second_Number + Third_Number)
+
+TextWindow.WriteLine(100 - Fifth_Number)
+
+TextWindow.WriteLine(2 * Fourth_Number)
+
+TextWindow.WriteLine(200 / Sixth_Number)
+
+TextWindow.WriteLine(Math.SquareRoot(Third_Number))
+
+TextWindow.WriteLine(Math.Round(5.63))
+
+'Convert Fahrenheit to Celsius
+TextWindow.Write("What is temperature in Fahrenheit?: ")
+Fahrenheit = TextWindow.ReadNumber()
+Celsius = (Fahrenheit - 32) * 5/9
+TextWindow.WriteLine("The temperature in Fahrenheit converted to Celsius is: " + Celsius)
+
+TextWindow.WriteLine(Math.GetRandomNumber(100))

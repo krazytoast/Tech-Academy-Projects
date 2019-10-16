@@ -1,0 +1,40 @@
+'Set window width
+GraphicsWindow.Width = 275
+
+'Turtle position
+Turtle.X = 130
+Turtle.Y = 400
+
+'Turtle Color
+GraphicsWindow.PenColor = "Green
+
+'Turtle Move
+Turtle.Move(150)
+
+'Update to Turtle Position
+Turtle.X = 135
+Turtle.Y = 400
+
+'Turtle Pen color and repeat the move and position
+GraphicsWindow.PenColor = "Green
+Turtle.Move(150)
+Turtle.X = 100
+Turtle.Y = 200
+
+'Turtle pen color update and draw 6 ellipses shifting turn after each one
+GraphicsWindow.PenColor = "MediumVioletRed
+Turns = 200
+Length = 300 / Turns
+Angle = 400 / Turns
+Turtle.Speed = 10
+For A =1 To 6
+  For B = 1 To Turns
+    Turtle.Move(Length)
+    Turtle.Turn(Angle)
+  EndFor
+  Turtle.Turn(18)
+EndFor
+
+'Position Turtle in center of ellipses
+Turtle.X = 128.5
+Turtle.Y = 193

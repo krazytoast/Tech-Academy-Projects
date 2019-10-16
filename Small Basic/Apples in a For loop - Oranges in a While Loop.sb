@@ -1,0 +1,9 @@
+For Apples = 1 To 10
+  TextWindow.Write(Apples)
+EndFor
+
+Oranges = 1
+While (Oranges < 20)
+  TextWindow.WriteLine("Oranges")
+  Oranges = Oranges + 1
+  EndWhile

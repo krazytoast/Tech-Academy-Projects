@@ -1,0 +1,40 @@
+'This code asks the user if they are dreaming and awaits input
+TextWindow.WriteLine("Are you dreaming?")
+TextWindow.Read()
+
+'This code moves the cursor 5 positions from the left and asks the user is they are sure and the awaits user input
+TextWindow.CursorLeft = 5
+TextWindow.WriteLine("Are you sure?")
+TextWindow.Read()
+
+'This code moves the cursor 7 down and 15 over and reiterates how the user is sure
+TextWindow.CursorTop = 7
+TextWindow.CursorLeft = 15
+TextWindow.WriteLine("How can you be sure?")
+TextWindow.Read()
+
+'This code creates a delay then hides the window and delays before revealing the window again
+Program.Delay(2000)
+TextWindow.Hide()
+Program.Delay(2000)
+TextWindow.Show()
+
+'This code outputs to the user, at 20 from the left and 17 down, of a secret and then delays
+TextWindow.CursorLeft = 20
+TextWindow.CursorTop = 17
+TextWindow.WriteLine("What if I told you a secret...")
+Program.Delay(2000)
+
+' This code outputs to the user, 17 form the left and 20 down, asking if they would like to know the secret and awaits input then creates a delay
+TextWindow.CursorLeft = 17
+TextWindow.CursorTop = 20
+TextWindow.WriteLine("Would you like to know?")
+TextWindow.Read()
+Program.Delay(1000)
+
+'This code moves the cursor 38 from left and 36 down and shushes the user because they are watching then creates a delay ends the program
+TextWindow.CursorLeft = 38
+TextWindow.CursorTop = 36
+TextWindow.WriteLine("Shh!")
+Program.Delay(1000)
+Program.End()

@@ -1,0 +1,16 @@
+'This asks user to guess and then assigns the input to a variable
+TextWindow.WriteLine("Guess a number between 1 and 100 ")
+Guess = TextWindow.Read()
+
+'This calls the Sub routine
+Rand ()
+
+'This Subroutine randomly selects a number between 1-100 and compares it to the user input
+Sub Rand
+  If (Guess = RandomNumGen) Then
+    TextWindow.WriteLine("You guessed right!")
+  Else
+    TextWindow.Write("Sorry you didn't guess correctly :(")
+    EndIf
+  RandomNumGen = Math.GetRandomNumber(100)
+  EndSub

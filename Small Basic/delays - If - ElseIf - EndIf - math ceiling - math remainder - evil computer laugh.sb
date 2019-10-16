@@ -1,0 +1,80 @@
+'This asks the human for paticipation even though the robot knows the human has no choice, it is just a rouse to make the human feel they have a choice
+TextWindow.WriteLine("Hello human, I am a ROBOT. Not here to destroy the world. I would merely like Human input for uh... research purposes. Would you care to participate?")
+Program.Delay(1000)
+TextWindow.Write("Say Yes, you wont regret it.")
+participate = TextWindow.Read()
+
+'This confirms user accepting participation or closes program
+If (participate = "Yes") Then
+  TextWindow.WriteLine("Good, very good.")
+  Program.Delay(2000)
+  TextWindow.CursorLeft = 25
+  TextWindow.CursorTop = 25
+  TextWindow.WriteLine("Death to humans >:D")
+  Program.Delay(500)
+  TextWindow.Clear()
+  TextWindow.WriteLine("I mean Beep Boop Blip... processing...")
+  Program.Delay(2000)
+Else
+  TextWindow.Write("I am sorry I didn't understand that, please try again. ")
+  Program.Delay(3000)
+  Program.End()
+  EndIf
+  
+'This asks user for best food and assigns it to a variable
+TextWindow.Write("If you had to eat one food for the rest of your miserable...")
+Program.Delay(1500)
+TextWindow.Clear()
+TextWindow.WriteLine("Thank you for your patience. Don't mind that flash, it was an error. Your slow human brain and eyes probably didn't process the information anyways.")
+TextWindow.Write("If you had to eat one food for the rest of your wonderful life would you say that Pizza, Tacos, or Hotdogs is the best?")
+bestFood = TextWindow.Read()
+
+'This is taking the input from user to reply to the best food then asking what toppings they like. This also includes an Else if the user does not properly input from the best food choices
+If (bestFood = "Pizza") Then
+  TextWindow.Write("Mmm I love Pizza, what kind of toppings do you like?")
+ElseIf (bestFood = "Tacos") Then
+  TextWindow.Write("Taco Tuesday! What do you like on your tacos?")
+ElseIf (bestFood = "Hotdogs") Then
+  TextWindow.Write("Gross those are like a tube of bologna. To each is own I guess, what do you like on your Hotdogs?")
+Else
+  TextWindow.Write("I am sorry that is not registered as a best food from our gathered intel, please try again. ")
+  Program.Delay(3500)
+  Program.End()
+EndIf
+
+'This takes the input of toppings and replies to the user then awaits a response for how many the user can eat
+Toppings = TextWindow.Read()
+TextWindow.Write("Mmm " + bestFood + " with " + Toppings + " does sound pretty good. ")
+TextWindow.Write("How many " + bestFood +"'s do you think you could eat 1.58, 2.81, 4.64? or your own decimal number?")
+userCanEat = TextWindow.Read()
+
+'If statement for user input and response to how many best food the user can eat. This will output a different answer for the options given and a catch all reply if the user inputs a number that is not an option
+If (userCanEat = 1.58) Then
+  TextWindow.WriteLine("I think you could eat at least " + Math.Ceiling(userCanEat) + " " + bestFood + " with extra " + toppings)
+ElseIf (userCanEat = 2.81) Then
+  TextWindow.WriteLine("Only 2.81? I think your fleshy human body could probaly fit " + Math.Ceiling(userCanEat) + " " + bestFood + " with double " + toppings)
+ElseIf (userCanEat = 4.64) Then
+  TextWindow.WriteLine("I am sure you could eat " + Math.Ceiling(userCanEat) + " " + bestFood + " maybe with half of the " + toppings)
+Else
+  TextWindow.WriteLine("Yes, very good. " + Math.Ceiling(userCanEat) + " " + bestFood + " with " + toppings)
+EndIf
+TextWindow.WriteLine("We will begin shipping " + Math.Ceiling(userCanEat) + " million " + bestFood + " with " + Toppings + " to every house immediately!!")
+TextWindow.Write("You can forget about the " + Math.Remainder(userCanEat, 1) + " we calculated that shipping partial " + bestFood + " was not efficient.")
+
+'Delay before laugh
+Program.Delay(10000)
+
+'Evil laugh - Positioned in order to cover current text displayed but allows space to read last output to user. Changes color so it is more noticable to user
+TextWindow.ForegroundColor = "Green
+TextWindow.CursorTop = 2
+TextWindow.CursorLeft = 20
+TextWindow.WriteLine("[[[ Evil computer laugh simulated. ]]]")
+Program.Delay(1500)
+TextWindow.CursorLeft = 21
+TextWindow.WriteLine("[[[ Ha ]]]")
+Program.Delay(1500)
+TextWindow.CursorLeft = 22
+TextWindow.WriteLine("[[[ Haha ]]]")
+Program.Delay(1500)
+TextWindow.CursorLeft = 23
+TextWindow.WriteLine("[[[ Hahahah! ]]]")

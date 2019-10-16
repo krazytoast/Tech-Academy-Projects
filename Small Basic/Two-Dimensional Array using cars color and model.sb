@@ -1,0 +1,17 @@
+'Car color and model
+Car["Toyota"]["Color"] = "Black"
+Car["Toyota"]["Model"] = "Corolla"
+Car["Honda"]["Color"] = "Silver"
+Car["Honda"]["Model"] = "Civic"
+Car["Kia"]["Color"] = "Blue"
+Car["Kia"]["Model"] = "Forte"
+Car["Tesla"]["Color"] = "Black"
+Car["Tesla"]["Model"] = "Model S"
+
+'Text write and read
+TextWindow.Write("What is the name?: ")
+Name = TextWindow.Read()
+
+'Display car color and model
+TextWindow.Write("The color is: " + Car[Name]["Color"] + ". ")
+TextWindow.Write("The model is: " + Car[Name]["Model"] + ". ")

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>Paragon Pizza Parlor!</title>
+        <meta charset="UTF-8">
+
+        <style>
+        
+            .flex-container {
+                display: flex;
+                background-color: rgb(165, 13, 13);
+            }   
+
+            .flex-container > div {
+                background-color: #f1f1f1;
+                margin: 10px;
+                padding: 10px;
+                font-size: 15px;
+                border: #0a0606;
+            }   
+
+            .order {
+                opacity:1;
+            }
+
+        </style>
+
+
+    </head>
+        <body>
+
+                
+            <div>
+
+                <!-- /Menu Selection-->
+                <div>
+                <h1> Paragon Pizza Parlor! </h1><br>
+                <form class="flex-container menu">
+                    <div>
+                        <h2>Pizza Size:</h2>
+                        <input type="radio" name="size" value="Personal" > Personal<br>
+                        <input type="radio" name="size" value="Med"> Medium<br>
+                        <input type="radio" name="size" value="Large" checked> Large<br>
+                        <input type="radio" name="size" value="X-Large"> X-Large<br>
+                    </div>
+                    <div>
+                        <h2>Meats:</h2>
+                        <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+                        <input type="checkbox" name="meat" value="Sausage"> Sausage<br>
+                        <input type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
+                        <input type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
+                        <input type="checkbox" name="meat" value="Anchovy"> Anchovy<br>
+                        <input type="checkbox" name="meat" value="Chicken"> Chicken<br>
+                    </div>
+                    <div>
+                        <h2>Veggies:</h2>
+                        <input type="checkbox" name="vegg" value="Tomatoes"> Tomatoes<br>
+                        <input type="checkbox" name="vegg" value="Onions"> Onions<br>
+                        <input type="checkbox" name="vegg" value="Olives"> Olives<br>
+                        <input type="checkbox" name="vegg" value="Green Peppers"> Green Peppers<br>
+                        <input type="checkbox" name="vegg" value="Mushrooms"> Mushrooms<br>
+                        <input type="checkbox" name="vegg" value="Pineapple"> Pineapple<br>
+                        <input type="checkbox" name="vegg" value="Spinach"> Spinach<br>
+                        <input type="checkbox" name="vegg" value="Jalapeno"> Jalapeno<br>
+                    </div>
+                    <div>
+                        <h2>Cheese:</h2>
+                        <input type="radio" name="cheese" value="Regular" checked> Regular<br>
+                        <input type="radio" name="cheese" value="No Cheese"> No Cheese<br>
+                        <input type="radio" name="cheese" value="Extra Cheese" > Extra Cheese<br>
+                    </div>
+                    <div>
+                        <h2>Sauce:</h2>
+                        <input type="radio" name="sauce" value="Marinara Sauce" checked> Marinara Sauce<br>
+                        <input type="radio" name="sauce" value="White Sauce"> White Sauce<br>
+                        <input type="radio" name="sauce" value="Barbaque Sauce" > Barbaque Sauce<br>
+                        <input type="radio" name="sauce" value="No Sauce" > No Sauce<br>
+                    </div>
+                    <div>
+                        <h2>Crust:</h2>
+                        <input type="radio" name="crust" value="Plain Crust" checked> Plain Crust<br>
+                        <input type="radio" name="crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
+                        <input type="radio" name="crust" value="Cheese Stuffed Crust" > Cheese Stuffed Crust<br>
+                        <input type="radio" name="crust" value="Spicy Crust" > Spicy Crust<br>
+                        <input type="radio" name="crust" value="House Special Crust" > House Special Crust<br>
+                    </div>
+                </form>
+                </div>
+                <!-- /Menu Selection-->
+                
+                <br>
+
+                <!-- Order and Cancel buttons -->
+                <div class="flex-container buttons">
+                    <div class="button" onclick="verifyCheckedItems()">
+                        <p>Place Order</p>
+                    </div>
+                    <div class="button" onclick="clearOrder">
+                        <p>Cancel Order</p>
+                    </div>
+                </div>
+                <!-- /Order and Cancel buttons -->
+
+                <br>
+
+                <!-- Order List -->
+                <div class="flex-container order">
+                    <div>
+                        <h2>Your Order Here</h2>
+                    </div>
+                </div>
+                <!-- Order List -->
+
+
+            </div>
+            <script>
+            
+            function verifyCheckedItems() {
+                var size = document.forms[0];
+                var txt = "";
+                var i;
+                for (i = 0; i < size.length; i++){
+                    if (size[i].checked) {
+                        txt = txt + size[i].value + " ";
+                    }
+                }
+                document.getElementById("menu").value = "You ordered a pizza with: " + txt;
+            }
+            
+            
+            
+            
+            
+            
+            
+            </script>
+
+        </body>
+    </html>

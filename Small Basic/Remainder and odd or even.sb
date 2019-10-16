@@ -1,0 +1,10 @@
+TextWindow.Write("Type a number that include a decimal: ")
+Number = TextWindow.ReadNumber()
+TextWindow.Write("Now we wil round your number! ...")
+TextWindow.Write("Your rounded number is: " + Math.Round(Number) + ".")
+Remainder = Math.Remainder(Math.Round(Number), 2)
+If (Remainder = 0) Then
+  TextWindow.WriteLine(" This number in even!")
+Else
+  TextWindow.WriteLine(" This is an odd number!")
+EndIf

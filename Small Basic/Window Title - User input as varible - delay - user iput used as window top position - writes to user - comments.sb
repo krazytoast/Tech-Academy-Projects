@@ -1,0 +1,22 @@
+'Change the Title of the window
+TextWindow.Title = "Overview of Software Dev Course Challenge: Page 281"
+
+'Asking user for input of favorite number and assigning it to a variable
+TextWindow.WriteLine("What is your number?")
+FavoriteNumber = TextWindow.Read()
+
+'Tells the user to hold on for 2 seconds
+Textwindow.WriteLine("Hold please...")
+
+'Creates a delay as if the computer is processing the entry
+Program.Delay(2000)
+TextWindow.Hide()
+
+'Sets the top of the window to the FavoriteNumber enters by the user
+TextWindow.Top = FavoriteNumber
+
+'Writes to user favorite number and informes the user of window movement
+TextWindow.WriteLine("Your favorite number is " + FavoriteNumber + " and has been moved to the appropriate location on the screen")
+
+'This code does not account for the user input being too large that the window will appear off-screen.
+'It will need a threshold added to assure max limits are not passed

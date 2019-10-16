@@ -1,0 +1,24 @@
+'Set window size - Screen can be adjusted using ScreenSize variable
+ScreenSize = 750
+
+'Height and Width must remain ScreenSize in order to keep square centered
+GraphicsWindow.Height = ScreenSize
+GraphicsWindow.Width = ScreenSize
+
+'Set background and pen color
+GraphicsWindow.PenColor = "Orange
+GraphicsWindow.BackgroundColor = "Black
+
+'Set Turtle X and Y position relative to Height and Width
+Turtle.X = GraphicsWindow.Height / 3
+Turtle.Y = GraphicsWindow.Width / 1.5
+
+'Set variables for size of shape and angle at which the turtle turns(square)
+Sides = GraphicsWindow.Height / 3
+Angle = 90
+
+'For loop that uses size and angle variables to create the shape
+For A = 1 To 4
+  Turtle.Move(Sides)
+  Turtle.Turn(Angle)
+  EndFor

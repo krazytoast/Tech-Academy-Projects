@@ -1,0 +1,4 @@
+For X = 1 To 8
+  Turtle.Move(75)
+  Turtle.Turn(45)
+  EndFor

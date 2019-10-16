@@ -1,0 +1,21 @@
+TextWindow.Write("Type a number: ")
+Number_1 = TextWindow.ReadNumber()
+TextWindow.Write("Type another number: ")
+Number_2 = TextWindow.ReadNumber()
+TextWindow.Write("Let's type another number: ")
+Number_3 = TextWindow.ReadNumber()
+TextWindow.Write("And one last number: ")
+Number_4 = TextWindow.ReadNumber()
+Largest_Number()
+TextWindow.WriteLine("The largest number is: " + Largest_Number)
+Sub Largest_Number
+   If Number_1 > Number_2 And Number_1 > Number_3 And Number_1 > Number_4 Then
+  Largest_Number = Number_1
+  ElseIf Number_2 > Number_1 And Number_2 > Number_3 And Number_2 > Number_4 Then
+  Largest_Number = Number_2
+  ElseIf Number_3 > Number_1 And Number_3 > Number_2 And Number_3 > Number_4 Then
+  Largest_Number = Number_3
+  Else
+  Largest_Number = Number_4
+  EndIf
+EndSub

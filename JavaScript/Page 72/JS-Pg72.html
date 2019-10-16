@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <style>
+            body{color:#000;font-weight:bold;}
+            button{color:#000;font-weight: bold;height: 35px;width: 100px;}
+        </style>
+
+        <title>JS-Pg72</title>
+        <link rel="stylesheet" href="./css/">
+    </head>
+    <body>
+
+        <h2 id="greet">Please Login:</h2>
+        Fist Name: <input type="text" id="txt1" size="25"><br><br>
+        Last Name: <input type="text" id="txt2" size="25"><br><br>
+        <button onclick="greet()">Login</button>
+
+        <script>
+            function greet() {
+                var fName = document.getElementById("txt1").value;
+                var lName = document.getElementById("txt2").value;
+                var greet = document.getElementById("greet").innerHTML = "Signed in as:<br>"+fName+"
+                "+lName;
+                txt1.value = ""; txt2.value = ""; // Clear the text fields
+            }
+        </script>
+    </body>
+</html>

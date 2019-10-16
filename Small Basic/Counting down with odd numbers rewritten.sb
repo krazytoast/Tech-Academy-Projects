@@ -1,0 +1,7 @@
+B = 29
+Start:
+TextWindow.WriteLine(B)
+B = B -2
+If (0 < B) Then
+  Goto Start
+  EndIf

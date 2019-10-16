@@ -1,0 +1,25 @@
+'Assign Title to keep to track of challenges
+GraphicsWindow.Title = "O.S.D.C. Challenge Page 312"
+
+'Set Graphics window Heigth and Width
+GraphicsWindow.Height = 500
+GraphicsWindow.Width = 700
+
+'Draw line, width and color
+GraphicsWindow.PenWidth = 20
+GraphicsWindow.PenColor = "Green
+GraphicsWindow.DrawLine(10, 20, 200, 200)
+
+'Set Pixel
+GraphicsWindow.SetPixel(30, 40, "Yellow")
+
+'Drawbound use: Italic, Bold, Fontsizes
+GraphicsWindow.FontItalic = "True"
+GraphicsWindow.FontSize = 20
+GraphicsWindow.DrawBoundText (300, 300, 200, "Hello Humans!")
+GraphicsWindow.FontItalic = "False"
+GraphicsWindow.FontSize = 15
+GraphicsWindow.DrawBoundText (275, 275, 200, "Hello Humans!")
+GraphicsWindow.FontBold = "True"
+GraphicsWindow.FontSize = 10
+GraphicsWindow.DrawBoundText (250, 250, 200, "Hello Humans!")

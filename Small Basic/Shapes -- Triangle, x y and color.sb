@@ -1,0 +1,4 @@
+'Creating Tirangle - Green - FIrst two number are top point, second set are the left corner, third set is the right corner
+'See the pattern first set is 300 and 150, second set is reverse 150 and 300, third is both (300+150) 400 and then 300
+GraphicsWindow.BrushColor = "Green
+GraphicsWindow.FillTriangle (300, 150, 150, 300, 450, 300)

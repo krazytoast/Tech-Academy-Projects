@@ -1,0 +1,5 @@
+If (Clock.Hour < 12) Then
+  TextWindow.WriteLine("It is a.m.")
+ElseIf (Clock.Hour > 12) Then
+  TextWindow.WriteLine("It is p.m.")
+EndIf

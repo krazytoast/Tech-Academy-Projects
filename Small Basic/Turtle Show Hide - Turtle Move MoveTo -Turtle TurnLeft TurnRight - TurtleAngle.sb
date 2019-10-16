@@ -1,0 +1,25 @@
+'Set screen - Can be adjusted
+ScreenSize = 700
+GraphicsWindow.Height =ScreenSize
+GraphicsWindow.Width = ScreenSize
+
+'Turtle show - Delay - Turtle Move - Turtle hide
+Turtle.Show()
+Program.Delay(500)
+Turtle.Hide()
+Program.Delay(500)
+
+'Turtle Show - Turtle Move - Turtle TurnRight
+Turtle.Angle = 30
+Turtle.Move(50)
+Turtle.TurnRight()
+Turtle.Show()
+Turtle.Move(50)
+
+'Turtle Angle - Turtle TurnLeft - Turtle Move
+Turtle.Angle = 45
+Turtle.Move(50)
+Turtle.TurnLeft()
+Turtle.Move(50)
+Turtle.MoveTo (ScreenSize/2, ScreenSize/2)
+Turtle.Hide()

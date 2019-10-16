@@ -1,0 +1,12 @@
+GraphicsWindow.DrawBoundText(250, 200, 100, "Click the screen!")
+GraphicsWindow.MouseDown = Click
+GraphicsWindow.BrushColor = "Yellow
+GraphicsWindow.BackgroundColor = "Black
+
+Sub Click
+  GraphicsWindow.ShowMessage("You clicked the mouse!", "NOTICE")
+  A = GraphicsWindow.MouseX - 5
+  B = GraphicsWindow.MouseY - 5
+  GraphicsWindow.FillTriangle(A, B, 30, 30, 40, 40)
+EndSub
+  

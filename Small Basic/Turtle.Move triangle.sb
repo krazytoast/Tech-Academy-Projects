@@ -1,0 +1,6 @@
+Turtle.Angle = 45
+Turtle.Move(150)
+Turtle.Angle = 135
+Turtle.Move(150)
+Turtle.Angle = 270
+Turtle.Move(215)

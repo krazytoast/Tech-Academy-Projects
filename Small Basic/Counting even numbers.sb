@@ -1,0 +1,3 @@
+For B = 2 To 30 Step 2
+  TextWindow.WriteLine(B)
+  EndFor

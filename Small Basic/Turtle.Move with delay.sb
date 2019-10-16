@@ -1,0 +1,8 @@
+Turtle.Move(50)
+Program.Delay(500)
+Turtle.Move(25)
+Program.Delay(500)
+Turtle.Move(75)
+Program.Delay(500)
+Turtle.Move(35)
+Program.Delay(500)

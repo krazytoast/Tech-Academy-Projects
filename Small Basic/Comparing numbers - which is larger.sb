@@ -1,0 +1,10 @@
+TextWindow.Write("Type in a number: ")
+First_Number = TextWindow.Read()
+TextWindow.Write("Type in another number: ")
+Second_Number = TextWindow.Read()
+If (First_Number > Second_Number) Then
+  Larger = First_Number
+Else
+  Larger = Second_Number
+EndIf
+  TextWindow.Write("The larger number is: " + Larger " ")
